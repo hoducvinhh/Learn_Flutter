@@ -1,3 +1,4 @@
+import 'package:app_02/MyContainer.dart';
 import 'package:flutter/material.dart';
 import 'MyScaffold.dart';
 import 'MyAppBar.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyText(),
+      home: const MyContainer(),
     );
   }
 }
