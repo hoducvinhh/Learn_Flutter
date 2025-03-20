@@ -1,8 +1,8 @@
 import 'package:app_02/main.dart';
 import 'package:flutter/material.dart';
 
-class MyContainer extends StatelessWidget {
-  const MyContainer({super.key});
+class MyColumnAndRow extends StatelessWidget {
+  const MyColumnAndRow({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,24 +44,25 @@ class MyContainer extends StatelessWidget {
       ),
       //backgroundColor: Colors.amberAccent,
       body: Center(
-        child: Container(
-          width: 200,
-          height: 200,                              
-          decoration: BoxDecoration(color: Colors.green,
-          borderRadius: BorderRadius.circular(20),
-          ),
-          padding: const EdgeInsets.all(20),
-          margin: const EdgeInsets.all(10),
-          child: Align(
-            alignment: Alignment.center,
-            child: const Text(
-              "Ho Duc Vinh",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                const SizedBox(height: 50),
+                Icon(Icons.access_alarm_outlined),
+                Icon(Icons.access_alarm_outlined),
+                Icon(Icons.access_alarm_outlined),
+                Icon(Icons.access_alarm_outlined),
+                Icon(Icons.access_alarm_outlined),
+              ],
             ),
-          ),
+
+            Row(
+              children: [
+                Text(".........."),
+              ],
+            )
+          ],
         ),
       ),
 
