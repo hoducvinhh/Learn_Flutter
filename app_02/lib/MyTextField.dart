@@ -81,6 +81,15 @@ class MyTextField extends StatelessWidget {
                   fillColor: Colors.greenAccent,
                 ),
               ),
+              SizedBox(height: 50),
+              TextField(
+                decoration: InputDecoration(
+                  labelText: "So dien thoai",
+                  hintText: "Nhap vao so dien thoai cua ban",
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.phone,
+              ),
             ],
           ),
         ),
