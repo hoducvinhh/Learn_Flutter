@@ -5,6 +5,7 @@ import 'package:app_02/MyColumnAndRow.dart';
 import 'package:app_02/MyContainer.dart';
 import 'package:app_02/MyGestures.dart';
 import 'package:app_02/MyTextField.dart';
+import 'package:app_02/MyTextField2.dart';
 import 'package:flutter/material.dart';
 import 'MyScaffold.dart';
 import 'MyAppBar.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyTextField(),
+      home:  MyTextField2(),
     );
   }
 }
